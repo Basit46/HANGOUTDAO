@@ -1,0 +1,337 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: #000000;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px white solid;
+}
+header .logo {
+  margin-left: 50px;
+  color: white;
+  font-size: 35px;
+  font-weight: bold;
+}
+header .navbar {
+  margin-right: 50px;
+}
+header .navbar ul {
+  list-style: none;
+}
+header .navbar ul li {
+  margin-left: 30px;
+  display: inline;
+}
+header .navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+header .navbar ul li a:hover {
+  letter-spacing: 2px;
+  color: coral;
+  transition: 0.3s;
+}
+header .bar {
+  display: none;
+}
+.home {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px white solid;
+}
+.home .left {
+  margin-left: 50px;
+  margin: 20px;
+}
+.home .left h1 {
+  color: white;
+  margin-bottom: 5px;
+  font-size: 50px;
+}
+.home .left .special {
+  color: purple;
+}
+.home .left .words {
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+.home .left .words p {
+  color: white;
+  font-size: 20px;
+  font-style: italic;
+}
+.home .left button {
+  all: unset;
+  padding: 6px 12px;
+  border-radius: 0px 10px 0px 0px;
+  background-color: white;
+  color: purple;
+  font-size: 20px;
+  font-weight: bold;
+  transition: 400ms;
+}
+.home .left button:hover {
+  padding: 10px 20px;
+  transition: 300ms;
+}
+.home .right {
+  margin-right: 50px;
+}
+.home .right img {
+  width: 500px;
+  height: 400px;
+}
+
+.about {
+  display: flex;
+  padding: 5px 50px;
+  box-sizing: border-box;
+  width: 100vw;
+  border-bottom: 2px white solid;
+}
+.about .about-img {
+  flex: 35%;
+}
+.about .about-img img {
+  height: 500px;
+  width: 400px;
+}
+.about .about-words {
+  flex: 65%;
+  padding: 5px 20px;
+}
+.about .about-words h1 {
+  color: white;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.about .about-words p {
+  color: white;
+  font-size: 20px;
+}
+.team {
+  margin-left: 50px;
+}
+.team h1 {
+  color: white;
+  margin-top: 3px;
+  margin-bottom: 5px;
+}
+.team .team-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 200px);
+  grid-template-rows: repeat(2, 200px);
+  grid-row-gap: 5px;
+  grid-column-gap: 10px;
+}
+.team .team-grid .member {
+  color: BLACK;
+  position: relative;
+}
+.team .team-grid .member h2 {
+  position: absolute;
+  bottom: 4px;
+  right: 2px;
+  display: none;
+}
+.h2design {
+  display: block;
+  position: absolute;
+  bottom: 4px;
+  right: 2px;
+  font-weight: 600;
+  color: black;
+}
+.team .team-grid .member img {
+  height: 200px;
+  width: 200px;
+}
+footer {
+  margin-top: 10px;
+  background-color: white;
+  display: grid;
+  place-items: center;
+  height: 30px;
+}
+footer h2 {
+  color: black;
+  font-weight: 600;
+}
+.menu {
+  display: none;
+}
+
+@media only screen and (max-width: 375px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px white solid;
+    width: 100vw;
+  }
+  header .logo {
+    margin-left: 10px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  header .navbar {
+    display: none;
+    margin-right: 50px;
+  }
+  header .bar {
+    display: inline;
+    margin-right: 10px;
+  }
+  header .bar i {
+    color: white;
+    font-size: 25px;
+  }
+  .home {
+    display: block;
+    border-bottom: 2px white solid;
+  }
+  .home .left {
+    margin-left: 10px;
+  }
+  .home .left h1 {
+    color: white;
+    margin-bottom: 4px;
+    font-size: 30px;
+  }
+  .home .left .special {
+    color: purple;
+  }
+  .home .left .words {
+    margin-top: 0px;
+    margin-bottom: 5px;
+  }
+  .home .left .words p {
+    color: white;
+    font-size: 16px;
+    font-style: italic;
+  }
+  .home .left button {
+    all: unset;
+    padding: 4px 8px;
+    border-radius: 0px 10px 0px 0px;
+    background-color: white;
+    color: purple;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 400ms;
+  }
+  .home .left button:hover {
+    padding-top: 10px;
+  }
+  .home .left button:active {
+    background-color: red;
+    color: white;
+  }
+  .home .right {
+    margin-right: 10px;
+  }
+  .home .right img {
+    width: 350px;
+    height: 200px;
+  }
+  .about {
+    display: block;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    width: 100vw;
+    border-bottom: 2px white solid;
+  }
+  .about .about-img img {
+    height: 400px;
+    width: 350px;
+  }
+  .about .about-words {
+    padding: 5px 10px;
+  }
+  .about .about-words h1 {
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .about .about-words p {
+    color: white;
+    font-size: 20px;
+  }
+  .team {
+    margin-left: 0px;
+  }
+  .team h1 {
+    color: white;
+    margin-top: 3px;
+    margin-bottom: 5px;
+  }
+  .team .team-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 170px);
+    grid-template-rows: repeat(5, 170px);
+    grid-row-gap: 5px;
+    grid-column-gap: 10px;
+  }
+  .team .team-grid .member {
+    color: BLACK;
+    position: relative;
+  }
+  .team .team-grid .member h2 {
+    position: absolute;
+    bottom: 4px;
+    right: 2px;
+    font-weight: 600;
+    color: black;
+  }
+  .team .team-grid .member img {
+    height: 170px;
+    width: 170px;
+  }
+  .menu {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    color: rgb(10, 10, 56);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: none;
+  }
+  .menu div {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+  }
+  .menu div i {
+    color: red;
+    font-size: 30px;
+  }
+  .menu li {
+    margin-bottom: 30px;
+    list-style: none;
+    text-align: center;
+  }
+  .menu li a {
+    color: rgb(20, 20, 77);
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 25px;
+  }
+  .menu li a:active {
+    color: red;
+  }
+}
